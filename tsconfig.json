@@ -1,0 +1,19 @@
+{ "extends": "ts-node/node16/tsconfig",
+  "compilerOptions": {
+      "outDir": "build",
+      "baseUrl": ".",
+      "paths": {
+          "~/*": [
+              "./*"
+          ]
+      }
+  },
+  "include": [
+      "config/**/*",
+      "scripts/**/*",
+      "test/**/*"
+  ],
+  "files": [
+      "./hardhat.config.ts"
+  ]
+}
